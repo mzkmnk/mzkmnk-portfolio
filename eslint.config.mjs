@@ -3,9 +3,11 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
+import gitignore from 'eslint-config-flat-gitignore'
 
 
 export default defineConfig([
+  gitignore(),
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], plugins: { js }, extends: ["js/recommended"] },
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], languageOptions: { globals: globals.browser } },
   tseslint.configs.recommended,

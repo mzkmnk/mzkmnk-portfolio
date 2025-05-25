@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "eslint:ins": "pnpm eslint --inspect-config",
-    "frontend:start": "pnpm --filter frontend start",
-    "frontend:build": "pnpm --filter frontend build"
+    "frontend:start": "pnpm --filter frontend run start",
+    "frontend:build": "pnpm --filter frontend run build",
+    "infra:deploy": "pnpm --filter infra run deploy"
   },
   "keywords": [],
   "author": "",

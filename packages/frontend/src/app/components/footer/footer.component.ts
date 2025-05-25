@@ -67,7 +67,7 @@ import { RouterLink } from '@angular/router'
         <div class="mt-16 pt-8 border-t border-gray-700">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-400 text-sm">
-              © 2025 Portfolio. All rights reserved.
+              © 2025 mizuki. All rights reserved.
             </p>
             <p class="text-gray-500 text-xs mt-2 md:mt-0">
               Built with Angular & Tailwind CSS

@@ -27,6 +27,8 @@ import {
   tablerUsers,
   tablerBrandNextjs,
   tablerCampfire,
+  tablerStackFront,
+  tablerBackground
 } from '@ng-icons/tabler-icons';
 
 import { routes } from './app.routes';
@@ -60,7 +62,9 @@ export const appConfig: ApplicationConfig = {
       tablerBrandFigma,
       tablerUsers,
       tablerBrandNextjs,
-      tablerCampfire
+      tablerCampfire,
+      tablerStackFront,
+      tablerBackground
     })
   ]
 };

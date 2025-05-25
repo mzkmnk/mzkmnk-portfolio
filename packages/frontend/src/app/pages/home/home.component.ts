@@ -1,10 +1,11 @@
 import { Component } from '@angular/core'
 import { SkillItemComponent, type Skill } from '../../components/skill-item/skill-item.component'
+import { NgIcon } from '@ng-icons/core'
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SkillItemComponent],
+  imports: [SkillItemComponent,NgIcon],
   template: `
     <!-- プロフィールヒーローセクション -->
     <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -87,9 +88,7 @@ import { SkillItemComponent, type Skill } from '../../components/skill-item/skil
             <div class="flex items-center justify-center mb-12">
               <div class="flex items-center bg-white rounded-2xl px-6 py-4 shadow-lg border border-blue-100/50">
                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-4">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                  </svg>
+                  <ng-icon name="tablerStackFront" size="20" color="white"></ng-icon>
                 </div>
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900">フロントエンド技術</h3>
               </div>
@@ -107,9 +106,7 @@ import { SkillItemComponent, type Skill } from '../../components/skill-item/skil
             <div class="flex items-center justify-center mb-12">
               <div class="flex items-center bg-white rounded-2xl px-6 py-4 shadow-lg border border-green-100/50">
                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center mr-4">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
-                  </svg>
+                  <ng-icon name="tablerBackground" size="20" color="white"></ng-icon>
                 </div>
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900">バックエンド技術</h3>
               </div>

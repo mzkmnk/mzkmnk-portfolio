@@ -8,25 +8,34 @@ import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
   gitignore(),
-  stylistic.configs.recommended,
   {
+    ignores: ['**/.angular/**'],
+  },
+  {
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    ...stylistic.configs.recommended,
     plugins: {
       '@stylistic': stylistic,
     },
     rules: {
       '@stylistic/indent': ['error', 2],
-      '@stylistic/function-call-argument-newline': ['error', 'always'],
+      '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     },
   },
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     plugins: { js },
-    extends: ['js/recommended'] },
-  { files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
-    languageOptions: { globals: globals.browser } },
+    extends: ['js/recommended'],
+  },
+  {
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    languageOptions: { globals: globals.browser },
+  },
   tseslint.configs.recommended,
-  { files: ['**/*.css'],
+  {
+    files: ['**/*.css'],
     plugins: { css },
     language: 'css/css',
-    extends: ['css/recommended'] },
+    extends: ['css/recommended'],
+  },
 ])

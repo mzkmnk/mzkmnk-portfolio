@@ -7,7 +7,7 @@
     "eslint:ins": "pnpm eslint --inspect-config",
     "frontend:start": "pnpm --filter frontend run start",
     "frontend:build": "pnpm --filter frontend run build",
-    "infra:deploy": "pnpm --filter infra run deploy",
+    "infra:deploy": "pnpm run frontend:build && pnpm --filter infra run deploy",
     "infra:destroy": "pnpm --filter infra run destroy"
   },
   "keywords": [],

@@ -211,3 +211,35 @@ html {
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   border-radius: var(--radius-full);
 }
+/* ヘッダーのスクロール最適化 - Chrome対応 */
+@media (max-width: 768px) {
+  /* モバイルでのヘッダー固定最適化 */
+  header {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    contain: layout style paint;
+  }
+  
+  /* transition-allの最適化 */
+  .transition-all {
+    transition: opacity 0.2s ease !important;
+  }
+}
+
+/* Chrome特有のヘッダー最適化 */
+@supports (-webkit-appearance: none) {
+  @media (max-width: 768px) {
+    header {
+      will-change: auto;
+      isolation: isolate;
+    }
+    
+    /* backdrop-blurの軽量化 */
+    .backdrop-blur-lg {
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+  }
+}

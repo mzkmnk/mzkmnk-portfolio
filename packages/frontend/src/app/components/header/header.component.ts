@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common'
   standalone: true,
   imports: [RouterLink, RouterLinkActive, CommonModule],
   template: `
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/50 transition-all duration-300">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 md:bg-white/80 md:backdrop-blur-lg border-b border-gray-200/50 transition-opacity duration-300" style="will-change: auto; contain: layout style paint;">
       <div class="container mx-auto px-6">
         <div class="flex justify-between items-center h-16">
           <!-- ロゴ -->

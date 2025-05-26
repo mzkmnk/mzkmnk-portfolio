@@ -65,7 +65,7 @@ import { NgIcon } from '@ng-icons/core'
       </div>
       
       <!-- スクロールインジケーター -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-smooth-bounce" style="transform: translateZ(0);">
+      <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-smooth-bounce" style="transform: translateZ(0);">
         <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
           <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-smooth-pulse"></div>
         </div>

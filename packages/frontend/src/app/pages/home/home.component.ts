@@ -8,7 +8,7 @@ import { NgIcon } from '@ng-icons/core'
   imports: [SkillItemComponent,NgIcon],
   template: `
     <!-- プロフィールヒーローセクション -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="relative h-full pt-15 pb-25 flex items-center justify-center overflow-hidden">
       <!-- 背景グラデーション -->
       <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"></div>
       
@@ -64,12 +64,6 @@ import { NgIcon } from '@ng-icons/core'
         </div>
       </div>
       
-      <!-- スクロールインジケーター -->
-      <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-smooth-bounce" style="transform: translateZ(0);">
-        <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-          <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-smooth-pulse"></div>
-        </div>
-      </div>
     </div>
 
     <!-- スキルセクション -->

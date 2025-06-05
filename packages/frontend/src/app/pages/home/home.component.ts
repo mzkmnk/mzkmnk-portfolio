@@ -8,24 +8,23 @@ import { NgIcon } from '@ng-icons/core'
   imports: [SkillItemComponent,NgIcon],
   template: `
     <!-- プロフィールヒーローセクション -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden text-white">
       <!-- 背景グラデーション -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"></div>
-      
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-slate-900 to-gray-800"></div>
+
       <!-- 装飾的な要素 -->
       <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-600/20 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-indigo-400/20 to-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
       </div>
-      
-      <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-5xl mx-auto">
+
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <div class="max-w-4xl mx-auto">
           <!-- プロフィール情報 -->
-          <div class="text-center mb-12">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-600 bg-clip-text text-transparent leading-tight">
-              Hello World!!
-            </h1>
-            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full mb-12"></div>
+          <div class="mb-12">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Modern Web Experiences</h1>
+            <p class="text-lg text-gray-300 mb-8">Crafting performant applications with Angular and modern tooling.</p>
+            <a href="#skills" class="inline-block px-6 py-3 bg-emerald-600 rounded-full shadow-lg hover:bg-emerald-500 transition-colors duration-300">View My Skills</a>
           </div>
           
           <!-- プロフィール詳細 -->
@@ -73,7 +72,7 @@ import { NgIcon } from '@ng-icons/core'
     </div>
 
     <!-- スキルセクション -->
-    <div class="py-24 bg-white">
+    <div id="skills" class="py-24 bg-white">
       <div class="container mx-auto px-6">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16">
